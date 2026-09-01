@@ -1,0 +1,91 @@
+{
+  "id": "marrow",
+  "name": "Marrow",
+  "description": "Brunswick strength gym landing. Bone, iron, oxblood. Light-custom: logo, colours, fonts, copy, section on/off. Distinct from spa/clinic templates.",
+  "category": "landing-page",
+  "subcategory": "gym",
+  "repository": "https://github.com/Little-Devs/template-marrow",
+  "demoUrl": "https://marrow.little.website/",
+  "previewImage": "",
+  "techStack": {
+    "framework": "Astro",
+    "version": "5.17.1",
+    "styling": "CSS variables",
+    "scripting": "TypeScript",
+    "buildTool": "Vite"
+  },
+  "features": [
+    "Brunswick strength gym landing",
+    "Light-custom: logo, colours, fonts, and copy",
+    "Section on/off for hero, board, programming, floor, coaches, and contact",
+    "Weekly main-lift board and programming",
+    "Distinct from spa and clinic templates",
+    "Bone, iron, and oxblood palette",
+    "Fully responsive Astro SSG"
+  ],
+  "aesthetic": {
+    "style": "Warehouse strength gym",
+    "description": "Brunswick strength gym landing",
+    "fonts": {
+      "display": "Teko",
+      "body": "Karla",
+      "mono": "IBM Plex Mono",
+      "sans": "Karla",
+      "primary": "Teko"
+    },
+    "colors": {
+      "primary": "#1a1714",
+      "primaryName": "Iron",
+      "accent": "#6b1c23",
+      "accentName": "Oxblood",
+      "background": "#e8dcc8",
+      "backgroundName": "Bone",
+      "bone": "#e8dcc8",
+      "iron": "#1a1714",
+      "oxblood": "#6b1c23",
+      "rust": "#8a3a2a",
+      "chalk": "#f4efe6",
+      "steel": "#6e675e"
+    }
+  },
+  "sections": [
+    "Hero",
+    "Board",
+    "Programming",
+    "Floor",
+    "Coaches",
+    "Contact"
+  ],
+  "useCases": [
+    "Strength gyms",
+    "Powerlifting clubs",
+    "Barbell gyms",
+    "Independent training floors"
+  ],
+  "customization": {
+    "difficulty": "easy",
+    "colorScheme": "CSS variables",
+    "typography": "Google Fonts (Teko, Karla, IBM Plex Mono)",
+    "layout": "CSS Grid + Flexbox"
+  },
+  "performance": {
+    "framework": "Astro (SSG)",
+    "cssOnly": "Most animations",
+    "lighthouse": "90+"
+  },
+  "license": "MIT",
+  "author": "Little-Devs",
+  "createdAt": "2026-09-01",
+  "lastUpdated": "2026-09-01",
+  "tags": [
+    "landing-page",
+    "gym",
+    "strength",
+    "powerlifting",
+    "brunswick",
+    "dark",
+    "astro",
+    "ssg"
+  ],
+  "version": "1.0.0"
+}
