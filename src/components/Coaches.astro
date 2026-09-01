@@ -1,0 +1,22 @@
+---
+import { site } from '../data/site';
+const { coaches } = site;
+---
+<section class="section" id="coaches">
+  <div class="wrap">
+    <p class="kicker">{coaches.kicker}</p>
+    <h2 class="section-title">{coaches.title}</h2>
+    <div class="coaches">
+      {coaches.people.map((p) => (
+        <article class="coach">
+          <img src={p.img} alt={p.alt} width="640" height="420" />
+          <div class="coach-body">
+            <span class="role">{p.role}</span>
+            <h3>{p.name}</h3>
+            <p>{p.note}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

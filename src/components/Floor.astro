@@ -1,0 +1,30 @@
+---
+import { site } from '../data/site';
+const { floor } = site;
+---
+<section class="section" id="floor">
+  <div class="wrap">
+    <p class="kicker">{floor.kicker}</p>
+    <h2 class="section-title">{floor.title}</h2>
+    <div class="floor-grid">
+      <div class="floor-shot" style={`background-image:url('${floor.shots[0].src}')`} role="img" aria-label={floor.shots[0].alt}>
+        <span>{floor.shots[0].label}</span>
+      </div>
+      <div class="floor-copy">
+        {floor.items.map((item) => (
+          <div class="floor-item">
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="floor-grid" style="margin-top:1.2rem">
+      {floor.shots.slice(1).map((s) => (
+        <div class="floor-shot" style={`background-image:url('${s.src}')`} role="img" aria-label={s.alt}>
+          <span>{s.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

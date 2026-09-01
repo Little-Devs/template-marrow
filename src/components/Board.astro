@@ -1,0 +1,28 @@
+---
+import { site } from '../data/site';
+const { board } = site;
+---
+<section class="section board-band" id="board">
+  <div class="wrap">
+    <div class="whiteboard">
+      <div class="board-head">
+        <div>
+          <p class="kicker">{board.kicker}</p>
+          <h2 class="section-title">{board.title}</h2>
+        </div>
+        <p class="board-week">Week <b>{board.week}</b></p>
+      </div>
+      <div class="lifts">
+        {board.lifts.map((lift) => (
+          <article class="lift">
+            <h3 class="lift-name">{lift.name}</h3>
+            <span class="lift-sets">{lift.sets}</span>
+            <span class="lift-load">{lift.load}<small> {lift.unit}</small></span>
+            <p class="lift-note">{lift.note}</p>
+          </article>
+        ))}
+      </div>
+      <p class="board-foot">{board.note}</p>
+    </div>
+  </div>
+</section>

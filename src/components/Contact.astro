@@ -1,0 +1,29 @@
+---
+import { site } from '../data/site';
+const { contact, hours, logo } = site;
+---
+<section class="section" id="contact">
+  <div class="wrap">
+    <p class="kicker">Membership is an enquiry</p>
+    <h2 class="section-title">Come lift. We do not take cards on this page.</h2>
+    <div class="contact-grid">
+      <div class="meta">
+        <p><span class="k">Floor</span><span class="v">{contact.address}</span></p>
+        <p><span class="k">Phone</span><span class="v"><a href={contact.phoneHref}>{contact.phone}</a></span></p>
+        <p><span class="k">Mail</span><span class="v"><a href={`mailto:${contact.email}`}>{contact.email}</a></span></p>
+        {hours.map((h) => (
+          <p><span class="k">{h.days}</span><span class="v">{h.time}</span></p>
+        ))}
+      </div>
+      <form class="enquire" action={`mailto:${contact.email}`} method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="note">What you lift now, and when you can come</label>
+        <textarea id="note" name="note" rows="4" required></textarea>
+        <button class="btn" type="submit">Open mail to sales@little.cloud</button>
+      </form>
+    </div>
+  </div>
+</section>
